@@ -1,0 +1,8 @@
+node_modules/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+jsonReporter/
+.DS_Store
+.vscode/
+
