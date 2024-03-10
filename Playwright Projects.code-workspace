@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../node-js-playwright-browserstack"
+    },
+    {
+      "path": "../playwight-VSCode"
+    },
+    {
+      "path": "../Playwright_PageObjectModel"
+    }
+  ],
+  "settings": {}
+}

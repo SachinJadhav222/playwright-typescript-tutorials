@@ -10,7 +10,11 @@ import { defineConfig, devices } from "@playwright/test";
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  
+  timeout: 90000,
+  testMatch: ["tests/sun.test.ts"],
+  // testMatch: ["tests/network.test.ts"],
+  //testMatch: ["tests/network.test.ts"],
+
   testDir: "./tests",
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -42,7 +46,7 @@ export default defineConfig({
     screenshot: "on",
     video: "on",
     /* Base URL to use in actions like `await page.goto('/')`. */
-     baseURL: 'https://ecommerce-playground.lambdatest.io/index.php?',
+    baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
